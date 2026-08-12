@@ -230,4 +230,40 @@ footer p {
   height: 24px;
   transition: stroke 0.3s ease;
 }
+/* Container que alinha o logo de um lado e o menu do outro */
+.cabecalho-principal {
+  display: flex;
+  justify-content: space-between; /* Empurra o logo para a esquerda e o menu para a direita */
+  align-items: center; /* Alinha os dois no centro, na vertical */
+  padding: 15px 5%; /* Dá um respiro nas laterais e em cima/embaixo */
+  background-color: #000000; /* Cor de fundo do cabeçalho (ajuste para a sua) */
+}
 
+/* Ajuste do tamanho do Logo */
+.logo-elegante {
+  height: 60px; /* Tamanho ideal para cabeçalhos (ajuste entre 50px e 80px se precisar) */
+  width: auto; /* Mantém a imagem proporcional, sem esticar */
+  display: block; /* Remove espaços em branco extras abaixo da imagem */
+  transition: transform 0.3s ease; /* Efeito suave */
+}
+
+/* Pequeno efeito ao passar o mouse no logo (opcional) */
+.logo-elegante:hover {
+  transform: scale(1.05); /* Dá um zoom bem de leve */
+}
+
+/* ---- Estilos básicos do menu (caso precise ajustar o seu) ---- */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Espaçamento entre os links do menu */
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: #ffffff; /* Cor do texto do menu */
+  font-weight: 600;
+  font-size: 16px;
+}
