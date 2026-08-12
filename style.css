@@ -242,7 +242,7 @@ footer p {
 /* Ajuste do tamanho do Logo */
 .logo-elegante {
   height: 60px; /* Tamanho ideal para cabeçalhos (ajuste entre 50px e 80px se precisar) */
-  width: auto; /* Mantém a imagem proporcional, sem esticar */
+  width: 60px; /* Mantém a imagem proporcional, sem esticar */
   display: block; /* Remove espaços em branco extras abaixo da imagem */
   transition: transform 0.3s ease; /* Efeito suave */
 }
