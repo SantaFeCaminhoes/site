@@ -199,3 +199,35 @@ footer p {
     font-size: 0.95rem;
     color: #AAAAAA;
 }
+/* Container do link no rodapé */
+.rodape-instagram {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Estilo do botão/link */
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+  color: #555555; /* Cor do texto e ícone (ajuste conforme seu site) */
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.btn-instagram:hover {
+  color: #E1306C; /* Cor oficial do Instagram */
+  transform: translateY(-2px); /* Efeito de flutuar levemente */
+}
+
+/* Ajuste do tamanho do ícone */
+.btn-instagram svg {
+  width: 24px;
+  height: 24px;
+  transition: stroke 0.3s ease;
+}
+
