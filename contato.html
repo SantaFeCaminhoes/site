@@ -36,26 +36,32 @@
 
         <section>
             <h2>Envie uma Mensagem</h2>
-            <form action="#" method="POST">
-                <label for="nome">Nome Completo ou Razão Social:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail Comercial:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="servico">Serviço Desejado:</label>
-                <select id="servico" name="servico">
-                    <option value="4-eixo">Instalação de 4º Eixo</option>
-                    <option value="caldeiraria">Caldeiraria Geral / Soldas</option>
-                    <option value="chassi">Alinhamento/Alongamento de Chassi</option>
-                    <option value="outro">Outros Reparos</option>
-                </select>
-
-                <label for="mensagem">Detalhes do Veículo e Solicitação:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-                <button type="submit">Enviar Solicitação de Orçamento</button>
-            </form>
+<!-- O atributo 'action' é o que faz a mágica de enviar para o seu e-mail -->
+                    <form action="https://formsubmit.co/santafecaminhoes@proton.me" method="POST">
+                      
+                      <!-- Exemplo de campos (você pode colocar os que já criou) -->
+                      <label for="nome">Nome:</label>
+                      <input type="text" name="nome" id="nome" required>
+                    
+                      <label for="telefone">Telefone:</label>
+                      <input type="tel" name="telefone" id="telefone" required>
+                    
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea name="mensagem" id="mensagem" required></textarea>
+                    
+                      <!-- CONFIGURAÇÕES INVISÍVEIS (OPCIONAIS, MAS RECOMENDADAS) -->
+                      
+                      <!-- 1. Define o assunto do e-mail que vai chegar na sua caixa de entrada -->
+                      <input type="hidden" name="_subject" value="Novo contato do site - CPL METALMECÂNICA">
+                      
+                      <!-- 2. Remove o teste de "Não sou um robô" padrão deles para deixar mais rápido -->
+                      <input type="hidden" name="_captcha" value="false">
+                      
+                      <!-- 3. Redireciona o cliente para o seu próprio site após enviar (troque o link pelo seu) -->
+                      <!-- <input type="hidden" name="_next" value="https://seusite.com.br/obrigado.html"> -->
+                    
+                      <button type="submit">Enviar Mensagem</button>
+                    </form>
         </section>
     </main>
 
