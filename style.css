@@ -245,6 +245,13 @@ footer p {
   width: 400px; /* Mantém a imagem proporcional, sem esticar */
   display: block; /* Remove espaços em branco extras abaixo da imagem */
   transition: transform 0.3s ease; /* Efeito suave */
+  border: 0;                  /* Remove borda */
+  outline: 0;                 /* Remove contorno */
+  padding: 0;                 /* Remove preenchimento */
+  margin: 0;                  /* Remove margem */
+  background: transparent;    /* Garante fundo transparente no elemento */
+  box-shadow: none;           /* Remove sombras */
+  vertical-align: middle;     /* Ajuda no alinhamento e remove espaços */
 }
 
 /* Pequeno efeito ao passar o mouse no logo (opcional) */
