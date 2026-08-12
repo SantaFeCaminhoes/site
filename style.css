@@ -233,9 +233,10 @@ footer p {
 /* Container que alinha o logo de um lado e o menu do outro */
 .cabecalho-principal {
   display: flex;
-  justify-content: space-between; /* Empurra o logo para a esquerda e o menu para a direita */
+  justify-content: flex-start; /* Empurra o logo para a esquerda e o menu para a direita */
   align-items: center; /* Alinha os dois no centro, na vertical */
   padding: 15px 5%; /* Dá um respiro nas laterais e em cima/embaixo */
+  gap: 80px;
   background-color: #000000; /* Cor de fundo do cabeçalho (ajuste para a sua) */
 }
 
